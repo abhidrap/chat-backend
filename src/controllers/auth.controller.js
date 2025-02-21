@@ -120,6 +120,7 @@ catch(error){
 //check auth on reload
 export const checkAuth = (req, res) =>{
     try{
+        console.log("testing", req.user);
         res.status(200).json(req.user);
     }
     catch(error)
